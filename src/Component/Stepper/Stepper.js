@@ -80,7 +80,7 @@ class Stepper extends Component {
                 {this.state.model[0].fields.slice(0, 3).map((element) => {
                   return (
                     <label key={element.fieldId} className={classes.label}>
-                      <p className={classes.para}>{element.fieldName}</p>
+                      <p className={classes.para1}>{element.fieldName}</p>
                       <input
                         type={element.type}
                         className={classes.input}
@@ -93,7 +93,7 @@ class Stepper extends Component {
               {this.state.model[0].fields.slice(3, 4).map((element) => {
                 return (
                   <label key={element.fieldId}>
-                    <p className={classes.para}>{element.fieldName}</p>
+                    <p className={classes.para2}>{element.fieldName}</p>
                     <input
                       placeholder={element.fieldName}
                       type={element.type}
@@ -105,7 +105,7 @@ class Stepper extends Component {
               {this.state.model[0].fields.slice(4, 5).map((element) => {
                 return (
                   <label key={element.fieldId}>
-                    <p className={classes.para}>{element.fieldName}</p>
+                    <p className={classes.para2}>{element.fieldName}</p>
                     <div className={classes.input2}>
                       <p>
                         <span>Browse</span> or Drag and Drop to attach a file
