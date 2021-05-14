@@ -49,7 +49,11 @@ class Stepper extends Component {
             <p className={classes.num}>1</p>
             <p className={classes.para}>Browser company info</p>
           </div>
-
+          <div className={classes.Dots}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <div className={classes.Child}>
             <p className={classes.num}>2</p>
             <p className={classes.para}>Director info</p>

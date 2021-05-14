@@ -6,23 +6,23 @@ class Nav extends Component {
   render() {
     return (
       <nav className="Nav">
-        <div className="icon">
+        <div className="menuicon">
           <i className="fa fa-bars" aria-hidden="true"></i>
         </div>
 
-        <ul>
-          <li className="color">
-            <p className="fonts ">CB</p>
-          </li>
-          <li className="font font-1">cloudbanking</li>
-        </ul>
-        <ul>
-          <li className="color-1">
-            <p>CG</p>
-          </li>
-          <li className="font"> Gregory Clark</li>
-          <i className="fa fa-chevron-down" aria-hidden="true"></i>
-        </ul>
+        <div className="brand">
+          <p className="logo">CB</p>
+          <h1 className="name">cloudbanking</h1>
+        </div>
+
+        <div className="sidebar">
+          <p className="logo">GC</p>
+          <h1 className="name">Gregory Clark</h1>
+          <div className="icon">
+            <i className="fa fa-chevron-down" aria-hidden="true"></i>
+          </div>
+        </div>
+
       </nav>
     );
   }
