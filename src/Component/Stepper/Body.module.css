@@ -3,57 +3,33 @@
   background-image: url("../../assets/gradient.jpg");
   background-size: cover;
 }
-.progressbar {
+.Container {
   display: flex;
-  justify-content: space-evenly;
-  width: 55%;
-  margin-left: 17%;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
 }
-
-.progressbar li {
-  list-style-type: none;
-  margin-top: 50px;
-}
-.progressbar span {
-  position: relative;
-  left: 10px;
-  top: 2px;
-}
-.dots {
-  position: relative;
-
-  font-size: 4rem;
-  bottom: 50px;
-  color: #f4f4f6;
-}
-.color {
-  background-color: #d6d6d6;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-.color1 {
-  background-color: #00a5cf;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  color: #fff;
-}
-
-.names {
-  width: 70%;
-  font-size: medium;
-  font-weight: normal;
+.Child {
   display: flex;
-  justify-content: space-around;
-  margin-left: 177px;
-  position: relative;
-  bottom: 50px;
-}
-.blue {
-  color: #00a5cf;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  width: 200px;
 }
 
+.num {
+  display: inline-block;
+  background-color: aqua;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+}
+.para {
+  font-size: smaller;
+  font-weight: 200;
+}
 .forms {
   width: 80%;
   height: 50%;
@@ -145,60 +121,19 @@
   background-color: #fff;
   color: rgba(0, 0, 0, 0.933);
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 600px) {
   .Body {
     width: 100%;
     background-color: #f4f4f6;
   }
-  .progressbar {
-    display: flex;
-    width: 60%;
-    position: relative;
-    right: 25px;
-    height: 20px;
+  .Child {
+    width: 250px;
   }
-  .color {
-    background-color: #cacaca;
-    width: 30px;
-    height: 15px;
-    border-radius: 50%;
-  }
-  .color1 {
-    background-color: #00a5cf;
-    width: 30px;
-    height: 15px;
-    border-radius: 50%;
-    color: #fff;
-  }
-  .progressbar li {
-    display: flex;
-    font-size: medium;
-    margin-top: 10px;
-  }
-  .progressbar span {
-    position: relative;
-    left: 5px;
-    top: 2px;
-    font-size: xx-small;
-  }
-  .dots {
-    position: relative;
-
-    font-size: 4rem;
-    bottom: 50px;
-    color: #e91313;
-  }
-  .names {
-    width: 70%;
-    height: 30px;
-    font-size: 7px;
-
+  .Child p {
+    font-size: smaller;
     font-weight: 100;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    top: 0px;
-    bottom: 20px;
-    right: 170px;
+  }
+  .Child p:nth-child(1) {
+    height: 60%;
   }
 }

@@ -4,8 +4,12 @@
 
   margin-left: 20px;
   justify-content: space-between;
-  height: 30px;
+  height: 45px;
 }
+.Nav .icon {
+  display: none;
+}
+
 .Nav ul {
   list-style-type: none;
   display: flex;
@@ -52,13 +56,18 @@ i {
   position: relative;
   left: 20px;
 }
-@media (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 600px) {
   .Nav {
     width: 50%;
-    height: 7px;
+    height: 30px;
     overflow-x: hidden;
   }
   .Nav ul {
     display: none;
+  }
+  .Nav .icon {
+    display: block;
+    margin-top: 5px;
+    margin-left: 0px;
   }
 }

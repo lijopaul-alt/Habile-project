@@ -6,6 +6,10 @@ class Nav extends Component {
   render() {
     return (
       <nav className="Nav">
+        <div className="icon">
+          <i className="fa fa-bars" aria-hidden="true"></i>
+        </div>
+
         <ul>
           <li className="color">
             <p className="fonts ">CB</p>

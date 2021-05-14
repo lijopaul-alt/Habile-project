@@ -44,35 +44,30 @@ class Stepper extends Component {
   render() {
     return (
       <div className={classes.Body}>
-        <ul className={classes.progressbar}>
-          <li className={classes.color1}>
-            <span>1</span>
-          </li>
-          <li className={classes.dots}>.........</li>
+        <div className={classes.Container}>
+          <div className={classes.Child}>
+            <p className={classes.num}>1</p>
+            <p className={classes.para}>Browser company info</p>
+          </div>
 
-          <li className={classes.color}>
-            <span>2</span>
-          </li>
-          <li className={classes.dots}>.........</li>
-          <li className={classes.color}>
-            <span>3</span>
-          </li>
-          <li className={classes.dots}>.........</li>
-          <li className={classes.color}>
-            <span>4</span>
-          </li>
-          <li className={classes.dots}>.........</li>
-          <li className={classes.color}>
-            <span>5</span>
-          </li>
-        </ul>
-        <div className={classes.names}>
-          <div className={classes.blue}>Borrower company info</div>
-          <div>Director info</div>
-          <div>financial info</div>
-          <div>Past Performance info</div>
-          <div>Document upload</div>
+          <div className={classes.Child}>
+            <p className={classes.num}>2</p>
+            <p className={classes.para}>Director info</p>
+          </div>
+          <div className={classes.Child}>
+            <p className={classes.num}>3</p>
+            <p className={classes.para}>financial info</p>
+          </div>
+          <div className={classes.Child}>
+            <p className={classes.num}>4</p>
+            <p className={classes.para}>Past performance Details</p>
+          </div>
+          <div className={classes.Child}>
+            <p className={classes.num}>5</p>
+            <p className={classes.para}>Document Upload</p>
+          </div>
         </div>
+
         <div className={classes.forms}>
           <div className={classes.content}>
             <h2>{this.state.model[0].pageName}</h2>
