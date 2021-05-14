@@ -1,0 +1,204 @@
+.Body {
+  height: 100vh;
+  background-image: url("../../assets/gradient.jpg");
+  background-size: cover;
+}
+.progressbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+  margin-left: 17%;
+}
+
+.progressbar li {
+  list-style-type: none;
+  margin-top: 50px;
+}
+.progressbar span {
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+.dots {
+  position: relative;
+
+  font-size: 4rem;
+  bottom: 50px;
+  color: #f4f4f6;
+}
+.color {
+  background-color: #d6d6d6;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.color1 {
+  background-color: #00a5cf;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.names {
+  width: 70%;
+  font-size: medium;
+  font-weight: normal;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 177px;
+  position: relative;
+  bottom: 50px;
+}
+.blue {
+  color: #00a5cf;
+}
+
+.forms {
+  width: 80%;
+  height: 50%;
+  border: 1px thin;
+  margin-left: 10%;
+  background-color: #fff;
+  overflow-y: scroll;
+  box-shadow: -5px 5px 5px -5px #f8f6ed;
+}
+.content {
+  margin-left: 10%;
+  position: relative;
+  top: 10%;
+}
+.content h2 {
+  font-family: "Farro", sans-serif;
+  font-weight: 400;
+}
+
+.first {
+  display: flex;
+  justify-content: flex-start;
+}
+.label {
+  width: 30%;
+}
+.para {
+  font-family: "Farro", sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+.input {
+  box-sizing: border-box;
+  padding: 10px 25px;
+  width: 90%;
+  border: 2px solid #e9e1c3;
+}
+.input1 {
+  box-sizing: border-box;
+  width: 87%;
+  padding: 50px 35px;
+  border: 2px solid #e9e1c3;
+}
+.input2 {
+  box-sizing: border-box;
+  width: 87%;
+  padding: 50px 35px;
+  border: 2px dotted #e9e1c3;
+}
+.input2 p {
+  text-align: center;
+}
+.input2 span {
+  color: #00a5cf;
+}
+.footer {
+  height: 10%;
+  border: 0px solid red;
+  width: 80%;
+
+  border-top: 1px solid #e9e1c3;
+  margin-left: 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer button {
+  margin-top: 10px;
+  margin-right: 35px;
+}
+.footer .btn1 {
+  width: 90px;
+  height: 35px;
+  background-color: #fff;
+  border: 2px solid #e9e1c3;
+}
+.footer .btn2 {
+  width: 90px;
+  height: 35px;
+  background-color: #00a5cf;
+  border: 0px solid #e9e1c3;
+  color: #fff;
+}
+
+.footer .btn1:hover {
+  background-color: #00a5cf;
+  color: #fff;
+}
+.footer .btn2:hover {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.933);
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .Body {
+    width: 100%;
+    background-color: #f4f4f6;
+  }
+  .progressbar {
+    display: flex;
+    width: 60%;
+    position: relative;
+    right: 25px;
+    height: 20px;
+  }
+  .color {
+    background-color: #cacaca;
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .color1 {
+    background-color: #00a5cf;
+    width: 30px;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+  }
+  .progressbar li {
+    display: flex;
+    font-size: medium;
+    margin-top: 10px;
+  }
+  .progressbar span {
+    position: relative;
+    left: 5px;
+    top: 2px;
+    font-size: xx-small;
+  }
+  .dots {
+    position: relative;
+
+    font-size: 4rem;
+    bottom: 50px;
+    color: #e91313;
+  }
+  .names {
+    width: 70%;
+    height: 30px;
+    font-size: 7px;
+
+    font-weight: 100;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 0px;
+    bottom: 20px;
+    right: 170px;
+  }
+}
